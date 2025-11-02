@@ -28,8 +28,10 @@
         <span class="logo-icon"></span>
         <span class="logo">Orbitl</span>
       </a>
-      <nav>
-        <ul class="nav-bar">
+
+      <!-- Desktop menu -->
+      <nav class="desktop-nav">
+        <ul>
           <a href="#solution">
             <li>Product</li> </a
           ><a href="#about"> <li>About</li> </a
@@ -42,6 +44,24 @@
         </ul>
       </nav>
       <a href="/index.html">Sign out</a>
+
+      <!-- Mobile menu -->
+      <nav class="mobile-nav">
+        <button></button>
+        <ul>
+          <a href="#solution">
+            <li>Product</li> </a
+          ><a href="#about"> <li>About</li> </a
+          ><a href="#contact">
+            <li>Contact</li>
+          </a>
+          <a href="#" class="cta-btn"
+            ><li>Get a demo</li></a
+          ><a href="/index.html"
+            ><li>Sign out</li></a
+          >
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="product-hero">
@@ -62,7 +82,7 @@
           height="350"
         />
       </div>
-      <div class="problem">
+      <div id="problem">
         <h2>
           Save your energy for the discoveries
           that matter
