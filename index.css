@@ -538,6 +538,20 @@ main {
   margin-left: -3rem;
 }
 
+/*  --------- Landing Page: Contact --------- */
+
+#contact {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#contact h2 {
+  font-family: "Hanken Grotesk", system-ui,
+    "Open Sans", sans-serif;
+  font-size: 1.3rem;
+}
+
 /*  --------- Landing Page: Footer --------- */
 footer {
   padding: 2rem 4rem 1rem 4rem;
@@ -556,12 +570,12 @@ footer > div {
   gap: 2rem;
 }
 
-.footer-col {
-  display: flex;
-  flex-direction: column;
+.footer-col > div,
+.footer-col h4 {
+  margin-bottom: 0.5rem;
 }
 
-.footer-col:nth-child(1) span {
+.footer-col:nth-child(1) div {
   font-weight: bolder;
   font-size: 1.1rem;
 }
