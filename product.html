@@ -23,259 +23,290 @@
     <title>Orbitl</title>
   </head>
   <body id="product-page">
-    <header>
-      <a href="/product.html">
-        <span class="logo-icon"></span>
-        <span class="logo">Orbitl</span>
-      </a>
-
-      <!-- Desktop menu -->
-      <nav class="desktop-nav">
-        <ul>
-          <a href="#solution">
-            <li>Product</li> </a
-          ><a href="#about"> <li>About</li> </a
-          ><a href="#contact">
-            <li>Contact</li>
-          </a>
-          <a href="#" class="cta-btn"
-            >Get a demo</a
-          >
-        </ul>
-      </nav>
-      <a href="/index.html">Sign out</a>
-
-      <!-- Mobile menu -->
-      <!-- <nav class="mobile-nav">
-        <button></button>
-        <ul>
-          <a href="#solution">
-            <li>Product</li> </a
-          ><a href="#about"> <li>About</li> </a
-          ><a href="#contact">
-            <li>Contact</li>
-          </a>
-          <a href="#" class="cta-btn"
-            ><li>Get a demo</li></a
-          ><a href="/index.html"
-            ><li>Sign out</li></a
-          >
-        </ul>
-      </nav> -->
-    </header>
-    <main>
-      <div class="product-hero">
-        <div class="hero-text">
-          <h1>
-            Modern science needs a modern workflow
-          </h1>
-          <p>
-            Orbitl is an AI-native platform that
-            helps scientists automate and
-            accelerate their research process.
-          </p>
-        </div>
-        <img
-          src="assets/dashboard-preview.png"
-          alt="Orbitl dashboard"
-          width="600"
-          height="350"
+    <main id="access-blocked">
+      <header>
+        <a href="/index.html">
+          <span class="logo-icon"></span>
+          <span class="logo">Orbitl</span>
+        </a>
+      </header>
+      <form
+        method="POST"
+        onsubmit="return false;"
+      >
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
         />
-      </div>
-      <div id="problem">
-        <h2>
-          Save your energy for the discoveries
-          that matter
-        </h2>
-        <div>
-          <p>
-            <strong
-              >The world needs science to solve
-              its biggest problems.</strong
+        <button type="submit">Enter</button>
+        <p class="error">
+          The password is incorrect
+        </p>
+      </form>
+    </main>
+    <div id="access-granted">
+      <header>
+        <a href="/product.html">
+          <span class="logo-icon"></span>
+          <span class="logo">Orbitl</span>
+        </a>
+
+        <!-- Desktop menu -->
+        <nav class="desktop-nav">
+          <ul>
+            <a href="#solution">
+              <li>Product</li> </a
+            ><a href="#about"> <li>About</li> </a
+            ><a href="#contact">
+              <li>Contact</li>
+            </a>
+            <a href="#" class="cta-btn"
+              >Get a demo</a
             >
-            Scientists shouldn't have to work with
-            a fragmented and outdated set of tools
-            for data, experiments, and
-            collaborations.
-          </p>
-        </div>
-      </div>
-      <div id="solution">
-        <h2>
-          Manage your entire process in one place
-        </h2>
-        <p>
-          Orbitl supports you throughout your
-          research journey, making it
-          <strong
-            >easier to stay organized and
-            reproduce results</strong
-          >.
-        </p>
-        <ul>
-          <li id="funding">Finding funding</li>
-          <li id="literature">
-            Exploring literature
-          </li>
-          <li id="experiments">
-            Running experiments
-          </li>
-          <li id="inventory">
-            Managing inventory
-          </li>
-          <li id="analysis">Analyzing data</li>
-          <li id="publication">
-            Publishing results
-          </li>
-        </ul>
-      </div>
-      <div id="product-features">
-        <h2>
-          Features fit for cutting-edge research
-        </h2>
-        <p>
-          Flexible by design,
-          <strong>adapting to how you work</strong
-          >— not the other way around.
-        </p>
-        <div>
-          <div id="orb">
-            <div>
-              <h3>Meet Orb</h3>
-              <h4><em>Your AI assistant</em></h4>
-            </div>
+          </ul>
+        </nav>
+        <a href="/index.html">Sign out</a>
+
+        <!-- Mobile menu -->
+        <nav class="mobile-nav">
+          <button></button>
+          <ul>
+            <a href="#solution">
+              <li>Product</li> </a
+            ><a href="#about"> <li>About</li> </a
+            ><a href="#contact">
+              <li>Contact</li>
+            </a>
+            <a href="#" class="cta-btn"
+              ><li>Get a demo</li></a
+            ><a href="/index.html"
+              ><li>Sign out</li></a
+            >
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="product-hero">
+          <div class="hero-text">
+            <h1>
+              Modern science needs a modern
+              workflow
+            </h1>
             <p>
-              Ask questions, find historical data,
-              and understand experimental trends
-              with intelligent insights.
-            </p>
-            <div id="orb-chat">
-              <div id="chat-to">
-                Find similar assays run with Cas9
-                variants
-              </div>
-              <div id="chat-from">
-                <p>
-                  Found 1 similar experiment with
-                  Cas9 variants from the past 3
-                  months:
-                </p>
-                <p>
-                  EXP-2023-045 (SpyCas9, 67%
-                  efficiency)
-                </p>
-              </div>
-            </div>
-            <p class="small-text">
-              Launching in 2026
+              Orbitl is an AI-native platform that
+              helps scientists automate and
+              accelerate their research process.
             </p>
           </div>
-          <div id="automations">
-            <div>
-              <h3>Reusable Automations</h3>
-              <p>
-                Set workflows to re-run on trigger
-                events. Integrate data, rules, and
-                code into custom automated
-                solutions.
-              </p>
-            </div>
-            <img
-              src="assets/quick-action-preview.png"
-              alt="Quick action preview"
-              width="200"
-              height="215"
-            />
-          </div>
-          <div id="eln">
-            <div>
-              <h3>Flexible ELN</h3>
-              <p>
-                Record your data anytime,
-                anywhere. Without touching the
-                keyboard.
-              </p>
-            </div>
-            <img
-              src="assets/eln-preview.png"
-              alt="ELN preview"
-              width="auto"
-              height="100"
-            />
-          </div>
+          <img
+            src="assets/dashboard-preview.png"
+            alt="Orbitl dashboard"
+            width="600"
+            height="350"
+          />
         </div>
-      </div>
-      <div id="about">
-        <h2>
-          Built for scientists by scientists
-        </h2>
-        <div>
-          <div class="founders-note">
-            <p>Hi. We’re Shree and Sanjana.</p>
+        <div id="problem">
+          <h2>
+            Save your energy for the discoveries
+            that matter
+          </h2>
+          <div>
             <p>
               <strong
-                >We love scientific research but
-                hate the friction caused by
-                existing systems.</strong
+                >The world needs science to solve
+                its biggest problems.</strong
               >
-              We’ve both spent hours in the lab,
-              caught between the processes of file
-              naming, data wrangling, and reagent
-              tracking for experiments.
-            </p>
-            <p>
-              We're building Orbitl because our
-              research community deserves a better
-              way to work.
+              Scientists shouldn't have to solve a
+              fragmented and outdated system for
+              data, experiments, and
+              collaborations.
             </p>
           </div>
-          <div class="founders-photos">
-            <img
-              src="assets/shree-headshot-transparent.png"
-              alt="Shree Patel"
-              height="300"
-            />
-            <img
-              src="assets/sanjana-headshot-transparent.png"
-              alt="Sanjana Rayan"
-              height="350"
-            />
+        </div>
+        <div id="solution">
+          <h2>
+            Manage your entire process in one
+            place
+          </h2>
+          <p>
+            Orbitl supports you throughout your
+            research journey, making it
+            <strong
+              >easier to stay organized and
+              reproduce results</strong
+            >.
+          </p>
+          <ul>
+            <li id="funding">Finding funding</li>
+            <li id="literature">
+              Exploring literature
+            </li>
+            <li id="experiments">
+              Running experiments
+            </li>
+            <li id="inventory">
+              Managing inventory
+            </li>
+            <li id="analysis">Analyzing data</li>
+            <li id="publication">
+              Publishing results
+            </li>
+          </ul>
+        </div>
+        <div id="product-features">
+          <h2>
+            Features fit for cutting-edge research
+          </h2>
+          <p>
+            Flexible by design,
+            <strong
+              >adapting to how you work</strong
+            >— not the other way around.
+          </p>
+          <div>
+            <div id="orb">
+              <div>
+                <h3>Meet Orb</h3>
+                <h4>
+                  <em>Your AI assistant</em>
+                </h4>
+              </div>
+              <p>
+                Ask questions, find historical
+                data, and understand experimental
+                trends with intelligent insights.
+              </p>
+              <div id="orb-chat">
+                <div id="chat-to">
+                  Find similar assays run with
+                  Cas9 variants
+                </div>
+                <div id="chat-from">
+                  <p>
+                    Found 1 similar experiment
+                    with Cas9 variants from the
+                    past 3 months:
+                  </p>
+                  <p>
+                    EXP-2023-045 (SpyCas9, 67%
+                    efficiency)
+                  </p>
+                </div>
+              </div>
+              <p class="small-text">
+                Launching in 2026
+              </p>
+            </div>
+            <div id="automations">
+              <div>
+                <h3>Reusable Automations</h3>
+                <p>
+                  Set workflows to re-run on
+                  trigger events. Integrate data,
+                  rules, and code into custom
+                  automated solutions.
+                </p>
+              </div>
+              <img
+                src="assets/quick-action-preview.png"
+                alt="Quick action preview"
+                width="200"
+                height="215"
+              />
+            </div>
+            <div id="eln">
+              <div>
+                <h3>Flexible ELN</h3>
+                <p>
+                  Record your data anytime,
+                  anywhere. Without touching the
+                  keyboard.
+                </p>
+              </div>
+              <img
+                src="assets/eln-preview.png"
+                alt="ELN preview"
+                width="auto"
+                height="100"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div id="contact">
-        <h2>Have something on your mind?</h2>
-        <a href="" class="cta-btn">
-          Send us a message
-        </a>
-      </div>
-    </main>
-    <footer>
-      <div>
-        <div class="footer-col">
-          <div>Orbitl</div>
-          <p>San Francisco, CA</p>
+        <div id="about">
+          <h2>
+            Built for scientists by scientists
+          </h2>
+          <div>
+            <div class="founders-note">
+              <p>Hi. We’re Shree and Sanjana.</p>
+              <p>
+                <strong
+                  >We love scientific research but
+                  hate the friction caused by
+                  existing systems.</strong
+                >
+                We’ve both spent hours in the lab,
+                caught between the processes of
+                file naming, data wrangling, and
+                reagent tracking for experiments.
+              </p>
+              <p>
+                We're building Orbitl because our
+                research community deserves a
+                better way to work.
+              </p>
+            </div>
+            <div class="founders-photos">
+              <img
+                src="assets/shree-headshot-transparent.png"
+                alt="Shree Patel"
+                height="300"
+              />
+              <img
+                src="assets/sanjana-headshot-transparent.png"
+                alt="Sanjana Rayan"
+                height="350"
+              />
+            </div>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Product</h4>
-          <a href="#product-features">
-            <p>Features</p>
+        <div id="contact">
+          <h2>Have something on your mind?</h2>
+          <a href="" class="cta-btn">
+            Send us a message
           </a>
         </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <a href="#about">
-            <p>About us</p>
-          </a>
-          <p>Careers</p>
-          <a href="#contact">
-            <p>Contact</p>
-          </a>
+      </main>
+      <footer>
+        <div>
+          <div class="footer-col">
+            <div>Orbitl</div>
+            <p>San Francisco, CA</p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <a href="#product-features">
+              <p>Features</p>
+            </a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#about">
+              <p>About us</p>
+            </a>
+            <p>Careers</p>
+            <a href="#contact">
+              <p>Contact</p>
+            </a>
+          </div>
         </div>
-      </div>
-      <p class="small-text">
-        © 2025 Orbitl. All rights reserved.
-      </p>
-    </footer>
+        <p class="small-text">
+          © 2025 Orbitl. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="product.js"></script>
   </body>
 </html>
