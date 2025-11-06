@@ -34,7 +34,7 @@ formButton.addEventListener("click", (e) => {
   console.log("Here", formInput.value);
   // Hey! You shouldn't be here
   // Proper user authentication coming soon...
-  if (formInput.value === "JoinOrbitl2026!") {
+  if (formInput.value === "Orbitl2026!") {
     content.style.display = "flex";
     content.style.visibility = "visible";
     signIn.style.display = "none";
