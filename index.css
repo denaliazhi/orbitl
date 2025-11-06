@@ -639,13 +639,38 @@ main#access-blocked {
   margin-bottom: 2rem;
 
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
 #contact h2 {
   font-family: var(--sans-serif);
   font-size: 1.3rem;
+}
+
+#contact span {
+  display: inline-block;
+  height: 1.2rem;
+  width: 1.2rem;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("assets/mail.png");
+}
+
+#contact a {
+  color: var(--primary);
+  background-color: transparent;
+  transition: background-color 200ms ease-in-out;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#contact a:hover {
+  background-color: var(--secondary);
 }
 
 /*  --------- Landing Page: Footer --------- */
@@ -762,6 +787,10 @@ footer .small-text {
     align-items: center;
   }
 
+  #access-blocked input[type="text"] {
+    font-size: 16px;
+  }
+
   /* Landing Page: Hero */
   .product-hero {
     justify-content: center;
@@ -873,7 +902,9 @@ footer .small-text {
 
   /* Landing Page: Contact */
   #contact {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 82%;
   }
 
   /* Landing Page: Footer */
